@@ -1,1 +1,3 @@
 # RNNforPNA
+
+I am trying to train a RNN to predict the spiking behavior of 200 Neurons in Prefrontal Cortex. The network consits of 3 layers. One Recurrent layer (activation function: tanh) that implements a low dimensional dynamical system that hopefully is able to generate the spike trains. One bottleneck layer that is reducing the maximum dimensionality of the process superseding on the recurrent layer to the size of the bottleneck layer and one output layer that produces the spike trains. The connection between the layers is feedforward. The activation of the bottleneck layer is the same as the activation function of the recurrent layer and the activation of the output layer is exponential.
